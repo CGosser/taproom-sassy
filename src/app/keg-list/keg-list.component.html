@@ -1,0 +1,10 @@
+<div id="keg-list" *ngFor="let currentKeg of kegs">
+  <h2>{{currentKeg.name}},</h2>
+  <h3>{{currentKeg.brand}}</h3>
+  <h3> Pints Remaining: {{currentKeg.volume}} </h3>
+  <button type="button" name="button" (click)="currentKeg.pullPint()">OI M8</button>
+  <app-edit-keg [currentKeg]="currentKeg"></app-edit-keg>
+</div>
+
+
+<!-- <child-component [variableNameInChild]="variableNameHereInTheParent"></child-component> -->
