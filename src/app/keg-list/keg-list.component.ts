@@ -19,6 +19,7 @@ export class KegListComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 

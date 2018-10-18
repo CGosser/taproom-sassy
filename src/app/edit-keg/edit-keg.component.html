@@ -1,5 +1,11 @@
 <button type="edit" name="Edit" (click)="currentKeg.toggleEdit()"> Edit </button>
-<input type="text" name="" value="" *ngIf="currentKeg.editable">
-<input type="text" name="" value="" *ngIf="currentKeg.editable">
-<input type="number" name="" value="" *ngIf="currentKeg.editable">
-<input type="number" name="" value="" *ngIf="currentKeg.editable">
+<div *ngIf="currentKeg.editable">
+  <label for="name">Name</label>
+  <input type="text" name="name" value="">
+  <label for="brand">Brand</label>
+  <input type="text" name="brand" value="">
+  <label for="price">Price</label>
+  <input type="number" name="price" value="">
+  <label for="abv">ABV</label>
+  <input type="number" name="abv" value="">
+</div>
