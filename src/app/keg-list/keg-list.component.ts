@@ -22,5 +22,4 @@ export class KegListComponent implements OnInit {
 
   }
 
-
 }
